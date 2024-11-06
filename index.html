@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/pokemon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="template.js"></script>
+</head>
+
+
+<body onload="init()">
+    <div id="header">
+
+        <div id="header-left">
+            <div>
+                <img src="./img/pokemon_n.svg" alt="">
+            </div>
+
+        <h2>Pokedex</h2>    
+
+        </div>
+
+        <div class="search">
+            <img class="icon" src="./img/pokemon_search.png" alt="">
+            <input id="searching" type="search" placeholder="Pokemon search" oninput="filterPokemon()">
+        </div>
+
+    </div>
+    
+        <div id="load">
+            <img src="./img/pokemon.svg" alt="Loading...">
+            <p id="loading">Load new cards...</p>
+        </div>
+
+    <div id="content">
+    </div>
+
+    <div id="big-card-container">
+    </div>
+
+    <div id="button-container">
+        <button onclick="loadMore()">Load more</button>
+    </div>
+
+</body>
+</html>
