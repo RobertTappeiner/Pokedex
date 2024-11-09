@@ -5,7 +5,7 @@ body {
 }
 
 .no-scroll {
-    overflow: hidden;
+    overflow: auto;
 }
 
 #header {
@@ -439,7 +439,12 @@ display: block;
 @media (max-width: 320px) {
     .card-big {
         margin: 15px;
-}
+        height: 500px;
+    }
+
+    .property-details {
+        height: 80px;
+    }
 }
 
 @media (max-width: 440px) {
